@@ -83,7 +83,7 @@ sudo userdel -r username
 
 ## Related Topics
 
-## A non-interactive shell is a shell that does NOT allow the user to log in or run commands interactively. In simple terms: It’s a “login disabled” shell — the user exists, but they cannot open a terminal session. Usage: To create users that are only meant for services, automation tools, or background processes, not real people(eg, system process, agents. Such users should not be able to log in via SSH or terminal.)
+# A non-interactive shell is a shell that does NOT allow the user to log in or run commands interactively. In simple terms: It’s a “login disabled” shell — the user exists, but they cannot open a terminal session. Usage: To create users that are only meant for services, automation tools, or background processes, not real people(eg, system process, agents. Such users should not be able to log in via SSH or terminal.)
 - Linux user management best practices
 
 ## Key Takeaways
@@ -114,5 +114,3 @@ sudo userdel -r username
 - Regular users need interactive shells like `/bin/bash`
 - Always verify user creation with multiple commands
 - Use principle of least privilege
-
-**Next Challenge**: [Day 002 - Temporary User Setup](./002.md)

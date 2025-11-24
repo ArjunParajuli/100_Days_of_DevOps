@@ -2,7 +2,7 @@
 # ssh into server using a user in that server
 ssh tony@stapp01
 
-# Switch to root (if needed, depends on environment)
+# Switch to root user (if needed, depends on environment)
 sudo su -
 
 # Check if user already exists
