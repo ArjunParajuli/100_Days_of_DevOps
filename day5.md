@@ -57,3 +57,18 @@ Can change the law legally
 
 👉 Root can modify SELinux policies
 
+
+Why disable SELinux after installing it?
+
+Because SELinux:
+Can break applications suddenly
+Needs policies tuned per application
+Can cause services to fail with no obvious error
+
+Real-world practice:
+Install SELinux
+Disable it
+Configure apps + policies safely
+Re-enable SELinux later
+👉 This avoids production outages.
+
