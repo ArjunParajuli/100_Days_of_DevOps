@@ -29,4 +29,31 @@ SELINUX=disabled
 What is SELinux?
 SELinux (Security-Enhanced Linux) is a kernel-level security mechanism that enforces mandatory access control (MAC).
 
+SELinux is a security guard inside Linux.
+Normal Linux permissions say:
+👉 “This user can read/write this file”
+
+SELinux adds another rule:
+👉 “Even if you can read it, are you ALLOWED to?”
+
+So even root or a hacked application can be blocked.
+Root can do anything only if the action is allowed by SELinux policy.
+Now access depends on 3 things:
+Linux permissions (rwx)
+User (root or not)
+SELinux policy
+
+Think of SELinux Like This:
+Imagine:
+Root = CEO
+SELinux = Government Law
+
+Even the CEO:
+Can’t break the law
+Must follow rules
+
+But the CEO:
+Can change the law legally
+
+👉 Root can modify SELinux policies
 
