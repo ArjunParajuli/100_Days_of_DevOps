@@ -7,5 +7,6 @@ The task requires copying the encrypted file /tmp/nautilus.txt.gpg from the Dock
 2. Copy the file to the containerUse the docker cp command (this copies byte-for-byte, preserving encryption integrity and all attributes):<br>
    docker cp /tmp/nautilus.txt.gpg ubuntu_latest:/usr/src/<br>
    Syntax: docker cp <source_path_on_host> <container_name_or_id>:<destination_path_in_container><br>
-3. Verify the file is inside the containerCheck that it arrived correctly: docker exec ubuntu_latest ls -l /usr/src/
+3. Verify the file is inside the containerCheck that it arrived correctly:<br>
+docker exec ubuntu_latest ls -l /usr/src/<br>
 You should see nautilus.txt.gpg listed.
