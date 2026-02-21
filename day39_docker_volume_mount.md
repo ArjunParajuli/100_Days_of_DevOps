@@ -1,0 +1,15 @@
+### Task:
+Check if the container's volume /usr/local/apache2/htdocs is correctly mapped with the host's volume /var/www/html.<br>
+Verify that the website is accessible on host port 8080 on App Server 1. Confirm that the command curl http://localhost:8080/ works on App Server 1.<br>
+
+As the container is stopped and the port mapping wasnt there in that container, we first remove it and recreate a new container with necessary configs:<br>
+- remove
+docker rm nautilus <br>
+
+- Run fresh with correct mappings
+docker run -d --name nautilus \
+  -p 8080:80 \
+  -v /var/www/html:/usr/local/apache2/htdocs \
+  httpd:latest
+
+
