@@ -9,14 +9,14 @@ kubectl create namespace dev
 apiVersion: v1 \
 kind: Pod \
 metadata:\
-  name: dev-nginx-pod\
-  namespace: dev\
+  &ensp;name: dev-nginx-pod\
+  &ensp;namespace: dev\
 spec:\
-  containers:\
-  - name: nginx\
-    image: nginx:latest\
-    ports:\
-    - containerPort: 80\
+  &ensp;containers:\
+  &ensp;&ensp;- name: nginx\
+  &ensp;&ensp;&ensp;  image: nginx:latest\
+  &ensp;&ensp;&ensp;  ports:\
+  &ensp;&ensp;&ensp;&ensp;  - containerPort: 80\
 
 3. kubectl apply -f dev-nginx-pod.yml\
 4. Check: kubectl get pods --all-namespaces
